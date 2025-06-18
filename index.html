@@ -1,39 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zaide - Multi-Channel AI Platform</title>
     <meta name="description" content="Zaide - Your fantastic AI-powered customer service platform">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased text-gray-900 bg-white">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100" x-data="{ isOpen: false }">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                <a href="https://wspolidoro.github.io/zaide-plataforma-de-multi-atendimento-com-ia-2025-06-18-iyc5a" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-300">
                     Zaide
-                </div>
+                </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About Us</a>
                     <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
                 </div>
                 <a href="https://wa.me/5521999561515" class="hidden md:block px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                     Get Started
                 </a>
-                <button @click="isOpen = !isOpen" class="md:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div class="md:hidden" x-show="isOpen" x-transition>
+            <div class="mobile-menu hidden md:hidden">
                 <div class="pt-4 pb-3 space-y-3">
-                    <a href="#features" class="block text-gray-600 hover:text-gray-900">Features</a>
-                    <a href="#benefits" class="block text-gray-600 hover:text-gray-900">Benefits</a>
-                    <a href="#faq" class="block text-gray-600 hover:text-gray-900">FAQ</a>
+                    <a href="#features" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">About Us</a>
+                    <a href="#faq" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
+                    <a href="https://wa.me/5521999561515" class="block w-full text-center px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        Get Started
+                    </a>
                 </div>
             </div>
         </nav>
@@ -44,13 +58,13 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-                        Zaide - Plataforma de multi Atendimento com IA
+                        Transform Your Customer Service with AI-Powered Intelligence
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 mb-12">
-                        Seu atendimento com IA é fantástico!
+                        Streamline your customer interactions across all channels with our revolutionary AI platform. Experience the future of customer service today!
                     </p>
                     <a href="https://wa.me/5521999561515" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full text-lg font-medium hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                        Começar Agora
+                        Start Your Free Trial
                     </a>
                 </div>
             </div>
@@ -58,36 +72,36 @@
 
         <section id="features" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Recursos Poderosos</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features for Modern Business</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Múltiplos Atendentes</h3>
-                        <p class="text-gray-600">Gerencie várias conversas simultaneamente com eficiência.</p>
+                        <h3 class="text-xl font-semibold mb-4">Intelligent Multi-Agent System</h3>
+                        <p class="text-gray-600">Handle unlimited concurrent conversations with our AI-powered routing system. Automatically assigns inquiries to the most qualified agent while maintaining consistent service quality.</p>
                     </div>
                     
-                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Múltiplos Canais</h3>
-                        <p class="text-gray-600">Integre diferentes plataformas de comunicação em um só lugar.</p>
+                        <h3 class="text-xl font-semibold mb-4">Omnichannel Integration</h3>
+                        <p class="text-gray-600">Seamlessly connect WhatsApp, Facebook, Instagram, Email, and Live Chat in one unified inbox. Never miss a customer interaction with our smart notification system.</p>
                     </div>
 
-                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">IA para Atendimento</h3>
-                        <p class="text-gray-600">Automatize respostas com inteligência artificial avançada.</p>
+                        <h3 class="text-xl font-semibold mb-4">Advanced AI Assistant</h3>
+                        <p class="text-gray-600">Leverage cutting-edge natural language processing to automate up to 80% of customer inquiries. Our AI learns from each interaction to provide increasingly accurate responses.</p>
                     </div>
                 </div>
             </div>
@@ -95,77 +109,195 @@
 
         <section id="benefits" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Benefícios</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Zaide?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Atendimento 24h</h3>
-                        <p class="text-gray-600">Disponibilidade total para seus clientes, dia e noite.</p>
+                        <h3 class="text-xl font-semibold mb-4">24/7 Availability</h3>
+                        <p class="text-gray-600">Provide instant responses to customer inquiries around the clock. Our AI never sleeps, ensuring your business is always accessible to customers worldwide.</p>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Sua Secretária Full Time</h3>
-                        <p class="text-gray-600">Assistente virtual dedicada sempre à disposição.</p>
+                        <h3 class="text-xl font-semibold mb-4">Virtual Assistant Excellence</h3>
+                        <p class="text-gray-600">Your dedicated AI assistant handles routine tasks, appointment scheduling, and customer support with human-like understanding and efficiency.</p>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">100% Online</h3>
-                        <p class="text-gray-600">Acesse de qualquer lugar, a qualquer momento.</p>
+                        <h3 class="text-xl font-semibold mb-4">Cloud-Powered Platform</h3>
+                        <p class="text-gray-600">Access your customer service dashboard from anywhere with our secure cloud platform. Real-time analytics and reporting at your fingertips.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Zaide has transformed our customer service operations. We've seen a 60% reduction in response time and a 40% increase in customer satisfaction scores. The AI's ability to handle multiple languages has helped us expand globally."</p>
+                        <div class="font-semibold">Sarah Chen</div>
+                        <div class="text-sm text-gray-500">Director of Customer Experience, TechGlobe Inc.</div>
+                    </div>
+
+                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The omnichannel integration is seamless. Our team can now manage all customer communications from a single dashboard, saving us countless hours. The AI's learning capability is impressive - it gets better every day."</p>
+                        <div class="font-semibold">Marcus Thompson</div>
+                        <div class="text-sm text-gray-500">Operations Manager, CloudServe Solutions</div>
+                    </div>
+
+                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"As a small business owner, Zaide has been a game-changer. The 24/7 availability means we never miss an opportunity, and the cost savings compared to hiring additional staff has been substantial."</p>
+                        <div class="font-semibold">Lisa Rodriguez</div>
+                        <div class="text-sm text-gray-500">Owner, Boutique Fashion House</div>
+                    </div>
+
+                    <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The implementation was smooth, and the support team was exceptional. We've automated 75% of our routine inquiries, allowing our team to focus on complex cases. ROI was visible within the first month."</p>
+                        <div class="font-semibold">James Wilson</div>
+                        <div class="text-sm text-gray-500">CTO, Digital Solutions Ltd</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Zaide</h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-gray-600 mb-8">
+                        Founded in 2020 by a team of AI experts and customer service veterans, Zaide emerged from a simple observation: businesses needed a better way to manage customer communications across multiple channels. Our founders combined their expertise in machine learning and customer experience to create a platform that would revolutionize how businesses interact with their customers.
+                    </p>
+                    <p class="text-gray-600">
+                        Our mission is to democratize access to advanced AI-powered customer service tools, making enterprise-level technology accessible to businesses of all sizes. We believe in the power of human-AI collaboration and are committed to developing solutions that enhance rather than replace human interaction. Our core values of innovation, accessibility, and customer-centricity drive everything we do.
+                    </p>
                 </div>
             </div>
         </section>
 
         <section id="faq" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Perguntas Frequentes</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
                 <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
                     <div class="rounded-lg border border-gray-200">
                         <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full p-6 text-left">
                             <div class="flex items-center justify-between">
-                                <span class="text-lg font-semibold">Como funciona a IA no atendimento?</span>
+                                <span class="text-lg font-semibold">How does the AI learning system work?</span>
                                 <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 1}">▼</span>
                             </div>
                         </button>
                         <div class="p-6 pt-0" x-show="selected === 1" x-transition>
-                            <p class="text-gray-600">Nossa IA analisa as mensagens e fornece respostas contextualizadas automaticamente.</p>
+                            <p class="text-gray-600">Our AI system uses advanced machine learning algorithms to analyze customer interactions and improve responses over time. It learns from successful conversations, human agent corrections, and customer feedback to continuously enhance its understanding and response accuracy.</p>
                         </div>
                     </div>
 
                     <div class="rounded-lg border border-gray-200">
                         <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full p-6 text-left">
                             <div class="flex items-center justify-between">
-                                <span class="text-lg font-semibold">Quais canais são suportados?</span>
+                                <span class="text-lg font-semibold">What channels are supported?</span>
                                 <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 2}">▼</span>
                             </div>
                         </button>
                         <div class="p-6 pt-0" x-show="selected === 2" x-transition>
-                            <p class="text-gray-600">Integramos WhatsApp, Telegram, Facebook Messenger e outros canais populares.</p>
+                            <p class="text-gray-600">We support WhatsApp, Facebook Messenger, Instagram, Twitter, Email, SMS, and Live Chat. Our platform can be integrated with custom channels through our API.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border border-gray-200">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full p-6 text-left">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">How secure is the platform?</span>
+                                <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 3}">▼</span>
+                            </div>
+                        </button>
+                        <div class="p-6 pt-0" x-show="selected === 3" x-transition>
+                            <p class="text-gray-600">We implement enterprise-grade security measures including end-to-end encryption, regular security audits, and compliance with GDPR, CCPA, and other privacy regulations. All data is stored in secure, certified data centers.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border border-gray-200">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full p-6 text-left">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">What kind of support do you offer?</span>
+                                <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 4}">▼</span>
+                            </div>
+                        </button>
+                        <div class="p-6 pt-0" x-show="selected === 4" x-transition>
+                            <p class="text-gray-600">We provide 24/7 technical support, dedicated account managers for enterprise clients, comprehensive documentation, video tutorials, and regular training sessions. Our support team is available via chat, email, and phone.</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border border-gray-200">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full p-6 text-left">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">Can I customize the AI responses?</span>
+                                <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 5}">▼</span>
+                            </div>
+                        </button>
+                        <div class="p-6 pt-0" x-show="selected === 5" x-transition>
+                            <p class="text-gray-600">Yes, you can fully customize the AI's responses, tone, and personality to match your brand voice. Our platform allows you to create custom response templates, set up specific workflows, and define conversation rules.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-gradient-to-r from-purple-600 to-blue-500">
+        <section class="py-24 bg-gradient-to-r from-purple-600 to-blue-500" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80'); background-blend-mode: overlay;">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Pronto para revolucionar seu atendimento?</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to Transform Your Customer Service?</h2>
+                <p class="text-xl text-white mb-8">Join thousands of businesses already using Zaide to deliver exceptional customer experiences.</p>
                 <a href="https://wa.me/5521999561515" class="inline-block px-8 py-4 bg-white text-purple-600 rounded-full text-lg font-medium hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                    Começar Gratuitamente
+                    Start Your Free Trial
                 </a>
             </div>
         </section>
@@ -176,32 +308,67 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-4">Zaide</h3>
-                    <p class="text-gray-400">Sua plataforma de atendimento inteligente</p>
+                    <p class="text-gray-400">Transforming customer service with AI innovation</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Contato</h4>
-                    <p class="text-gray-400">contato@zaide.com.br</p>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+                    <p class="text-gray-400">contact@zaide.com</p>
+                    <p class="text-gray-400">+1 (555) 123-4567</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Links</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#features" class="hover:text-white transition-colors duration-300">Features</a></li>
                         <li><a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
                         <li><a href="#faq" class="hover:text-white transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacidade</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Termos</a></li>
+                        <li><a href="https://wspolidoro.github.io/zaide-plataforma-de-multi-atendimento-com-ia-2025-06-18-iyc5a/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://wspolidoro.github.io/zaide-plataforma-de-multi-atendimento-com-ia-2025-06-18-iyc5a/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://wspolidoro.github.io/zaide-plataforma-de-multi-atendimento-com-ia-2025-06-18-iyc5a/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2024 Zaide. Todos os direitos reservados.</p>
+                <p class="text-gray-400">&copy; 2024 Zaide. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
